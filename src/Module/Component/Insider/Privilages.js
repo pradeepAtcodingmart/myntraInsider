@@ -6,8 +6,8 @@ export default class Privilages extends Component {
     render() {
         const title = (
             <div>
-                Welcome,<b>Pradeep</b><br />
-                You're an <b>Insider</b>
+               <h3>Welcome,<b>Pradeep</b><br />
+                You're an <b>Insider</b></h3> 
             </div>
         )
         return (

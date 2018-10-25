@@ -4,11 +4,13 @@ import MainModuleHeader from './MainModuleHeader';
 import Privilages from '../Component/Insider/Privilages'
 import InsiderPoints from '../Component/Insider/InsiderPoints';
 import Carousel from '../Component/Carousel/Carousel';
+import Title from '../Component/Title/Title';
+import EarnInsider from '../Component/EarnInsider/EarnInsider';
 export default class MainModule extends Component {
   constructor(){
     super();
     this.state ={
-      card:[
+      perks:[
         {
           imgsrc:"https://assets.myntassets.com/assets/images/banners/2018/9/27/dc0b470b-2b8b-4eab-b350-1329416011861538042735609-Meet-Celeb_202742470.jpg",
           content:"Come Face to Face with your favourite celebrity"
@@ -27,7 +29,7 @@ export default class MainModule extends Component {
           content:"Come Face to Face with your favourite celebrity"
         }
       ],
-      card1:[
+      experience:[
         {
           title:"Myntra",
           imgsrc:"https://assets.myntassets.com/assets/images/banners/2018/10/24/1efcbe77-98ef-410a-a9d7-360be1479b7b1540392538765-Fashionotsav300_up.png",
@@ -50,6 +52,24 @@ export default class MainModule extends Component {
           imgsrc:"https://assets.myntassets.com/assets/images/banners/2018/9/27/dc0b470b-2b8b-4eab-b350-1329416011861538042735609-Meet-Celeb_202742470.jpg",
           content:"Come Face to Face with your favourite celebrity"
         }
+      ],
+      earnInsider:[
+        {
+          imgsrc:'https://assets.myntassets.com/assets/images/banners/2018/9/27/b9d8a6a5-a1cb-47ed-b04c-58905787063d1538042625718-Checkout-the-Beauty-products.png',
+          content:'Add glam and glitz to your beauty!'
+        },
+        {
+          imgsrc:'https://assets.myntassets.com/assets/images/banners/2018/9/21/42a461d9-ae88-4cda-be83-696c89c279bb1537533060853-Running_Store_Men.jpg',
+          content:'Explore the Running store!'
+        },
+        {
+          imgsrc:'https://assets.myntassets.com/assets/images/retaillabs/2018/10/24/9521cd03-1cf4-4b7e-b91c-f45211c56abb1540388168513-HOP_Offer3.jpg',
+          content:'Saifs Biggest Fan Wins A Royal Makeover on ZoomTV'
+        },
+        {
+          imgsrc:'https://assets.myntassets.com/assets/images/banners/2018/10/24/72b1c2a5-db81-489c-b4d2-735a1487dde61540392899678-Activity_HOP.png',
+          content:'Checkout House Of Pataudi product'
+        }
       ]
     }
   }
@@ -60,13 +80,13 @@ export default class MainModule extends Component {
             <Privilages/>
             <br/>
             <InsiderPoints/>
-            <br/>
-            <h3 style={{color:'white'}}><span style={{marginLeft:"10px"}}><b>Insider Perks</b></span><span style={{marginLeft:"200px"}}>View All></span></h3>
-            <Carousel card={this.state.card1}/>
-            <br/>  
-            <h1 style={{color:'white',marginLeft:"10px"}}><b>Insider Experience</b></h1>
-            <Carousel card={this.state.card}/>
-             <br/>
+            <Title header={'Insider Perks'} view={'View All >'}/>
+            <Carousel card={this.state.perks}/>
+            <Title header={'Insider Experience'} />
+            <Carousel card={this.state.experience}/>
+             <Title header={'Earn Insider Points'}/>
+             <EarnInsider earnInsider={this.state.earnInsider}/>
+             <Title header={'FAQs'} view={'View All >'}/>
             <FAQ/>
       </div>
     )

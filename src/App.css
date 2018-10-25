@@ -26,11 +26,12 @@
   }
 }
 body {
-  background-color: #EFC9F8;
+  background-color: #F1C9F7;
 }
 .MainModule{
-  background-image: url(https://assets.myntassets.com/assets/images/banners/2018/9/27/c87d8664-feae-4bc2-9b4c-6ecdb863e94f1538054100190-bg_insider.jpg);
-  background-attachment: fixed;
+  background-image: url(https://assets.myntassets.com/assets/images/retaillabs/2018/10/24/1bf9e3da-88e3-42a0-8c99-97071f4dd6bc1540391247630-HOP_insider-header-reduced-1-.jpg);
+  background-repeat: no-repeat;
+  background-color: #7E008D;
   max-width: 30%;
   min-width: 30%;
   min-height: 100vh;
@@ -107,4 +108,20 @@ body {
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+}
+.title {
+  margin-top: '20px';
+ color:white;
+}
+.title .title-header {
+margin-left: '20px' !important;
+font-size: 15pt
+}
+.title-view {
+  float: right;
+  font-size: 10pt
+
+}
+.float-left {
+  float: left;
 }

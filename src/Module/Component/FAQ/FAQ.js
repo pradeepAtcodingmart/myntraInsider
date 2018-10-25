@@ -59,9 +59,6 @@ export default class FAQ extends Component {
   render() {
     return (
       <div>
-           <span style={{marginLeft:'15px',color:"white",fontSize:'20pt'}}><b>FAQs</b></span>
-           <span style={{float:'right',color:"white",fontSize:'10pt'}}><b>VIEW ALL ></b></span>
-           <br/>
             <Card
               style={{ width: 350,margin:'auto' }}
                             >
