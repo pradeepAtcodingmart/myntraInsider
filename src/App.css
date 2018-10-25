@@ -1,21 +1,16 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
+@import '~antd/dist/antd.css';
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color:white;
+  min-height: 12vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+
+ 
 }
 
 .App-link {
@@ -29,4 +24,87 @@
   to {
     transform: rotate(360deg);
   }
+}
+body {
+  background-color: #EFC9F8;
+}
+.MainModule{
+  background-image: url(https://assets.myntassets.com/assets/images/banners/2018/9/27/c87d8664-feae-4bc2-9b4c-6ecdb863e94f1538054100190-bg_insider.jpg);
+  background-attachment: fixed;
+  max-width: 30%;
+  min-width: 30%;
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+} 
+.code-box-demo  {
+  margin: 0;
+  margin: auto
+}
+.ant-card-body{
+  color: black;
+}
+.ant-card-body ul li{
+  list-style: none;
+  padding: 0;
+  margin-left: -40px;
+}
+.ant-card-body ul li:before {
+  content: "+";
+  left: 0;
+  width: 10px;
+}
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
+
+.ant-carousel .slick-slide h3 {
+  color: #fff;
+}
+.rectangle-bar{
+  display: block;
+  margin-bottom: 30px;
+  width:"3px";
+  position: relative;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+.active {
+  background-color: "green"
+}
+.tiers-name {
+  height: 16px;
+  font-family: Lato;
+  font-size: 15px;
+  opacity: 0.8;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  text-align: center;
+  color:white;
+  position: relative;
+  margin-bottom: 7px;
+  margin-left: 8px;
+  text-transform: uppercase;
+  display: block;
+}
+.tier-info {
+  cursor: pointer;
+  padding: 0 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
